@@ -144,7 +144,152 @@
 </div><!-- .max-width -->
 </div><!-- .overflow-container -->
 <button id="scroll-to-top" class="scroll-to-top"><span class="screen-reader-text">Scroll to the top</span><i class="fas fa-arrow-up"></i></button><script type="speculationrules">{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/author\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}</script>
-<style id="etb-grid-b2f2e66a-inline-css" type="text/css">.etb-grid-b2f2e66a .wp-block-etb-grid-item{border-radius: 5px;}.etb-grid-b2f2e66a .quote-icon svg{fill: #fa0;opacity: 0.4;}.etb-grid-b2f2e66a .rate-select-layer span{color: #fa0;}.etb-grid-b2f2e66a .rating{color: #fa0;}.etb-grid-b2f2e66a.etb-has-bar.etb_left .wp-block-etb-grid-item{border-left-color: #c0c0c0;border-left-width: 4px;}.etb-grid-b2f2e66a.etb-has-bar.etb_right .wp-block-etb-grid-item{border-right-color: #c0c0c0;border-right-width: 4px;}.etb-grid-b2f2e66a.etb-has-bar.etb_top .wp-block-etb-grid-item{border-top-color: #c0c0c0;border-top-width: 4px;}.etb-grid-b2f2e66a.etb-has-bar.etb_bottom .wp-block-etb-grid-item{border-bottom-color: #c0c0c0;border-bottom-width: 4px;}.etb-grid-b2f2e66a .testimonial-message{text-align: left;}.etb-grid-b2f2e66a .reviewer-info{justify-content: flex-start;}.etb-grid-b2f2e66a .reviewer-photo{border-radius: 50%;border: 1px solid #c0c0c0 ;}.etb-grid-b2f2e66a .reviewer-name{}.etb-grid-b2f2e66a .reviewer-title{}.etb-grid-b2f2e66a .reviewer-company{}@media (min-width: 1025px) {.etb-grid-b2f2e66a.wp-block-etb-grid{grid-template-columns: repeat(2, 1fr);grid-gap: 20px;}.etb-grid-b2f2e66a .wp-block-etb-grid-item{padding: 20px;}.etb-grid-b2f2e66a .quote-icon svg{width: 60px;}.etb-grid-b2f2e66a .testimonial-message{font-size: 20px;}.etb-grid-b2f2e66a .reviewer-photo{width: 60px;height: 60px;}.etb-grid-b2f2e66a .reviewer-name{font-size: 24px;}.etb-grid-b2f2e66a .reviewer-title{font-size: 18px;}.etb-grid-b2f2e66a .reviewer-company{font-size: 16px;}}@media (min-width: 768px) and (max-width: 1024px) {.etb-grid-b2f2e66a.wp-block-etb-grid{grid-template-columns: repeat(2, 1fr);grid-gap: 20px;}.etb-grid-b2f2e66a .wp-block-etb-grid-item{padding: 20px;}.etb-grid-b2f2e66a .quote-icon svg{width: 48px;}.etb-grid-b2f2e66a .testimonial-message{font-size: 18px;}.etb-grid-b2f2e66a .reviewer-photo{width: 48px;height: 48px;}.etb-grid-b2f2e66a .reviewer-name{font-size: 20px;}.etb-grid-b2f2e66a .reviewer-title{font-size: 16px;}.etb-grid-b2f2e66a .reviewer-company{font-size: 15px;}}@media (max-width: 767px) {.etb-grid-b2f2e66a.wp-block-etb-grid{grid-template-columns: repeat(1, 1fr);grid-gap: 15px;}.etb-grid-b2f2e66a .wp-block-etb-grid-item{padding: 15px;}.etb-grid-b2f2e66a .quote-icon svg{width: 36px;}.etb-grid-b2f2e66a .testimonial-message{font-size: 16px;}.etb-grid-b2f2e66a .reviewer-photo{width: 36px;height: 36px;}.etb-grid-b2f2e66a .reviewer-name{font-size: 18px;}.etb-grid-b2f2e66a .reviewer-title{font-size: 14px;}.etb-grid-b2f2e66a .reviewer-company{font-size: 14px;}}</style>
+<style id="etb-grid-b2f2e66a-inline-css" type="text/css">
+/* Executive-Level Testimonials Design - Main Page */
+.etb-grid-b2f2e66a .wp-block-etb-grid-item{
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 8px 25px rgba(6, 147, 227, 0.08);
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.etb-grid-b2f2e66a .wp-block-etb-grid-item:hover{
+    box-shadow: 0 12px 35px rgba(6, 147, 227, 0.15);
+    transform: translateY(-2px);
+}
+.etb-grid-b2f2e66a .quote-icon svg{
+    fill: #0693e3;
+    opacity: 0.3;
+}
+.etb-grid-b2f2e66a .testimonial-header{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f5f5f5;
+    margin-bottom: 1.5rem;
+}
+.etb-grid-b2f2e66a .rating{
+    display: none; /* Remove ratings for executive look */
+}
+.etb-grid-b2f2e66a.etb-has-bar.etb_left .wp-block-etb-grid-item{
+    border-left-color: #0693e3;
+    border-left-width: 4px;
+}
+.etb-grid-b2f2e66a .testimonial-message{
+    text-align: left;
+    font-style: italic;
+    line-height: 1.7;
+    color: #2c3e50;
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+}
+.etb-grid-b2f2e66a .reviewer-info{
+    justify-content: flex-start;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid #f5f5f5;
+}
+.etb-grid-b2f2e66a .reviewer-photo{
+    border-radius: 50%;
+    border: 2px solid #0693e3;
+}
+.etb-grid-b2f2e66a .reviewer-name{
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+.etb-grid-b2f2e66a .reviewer-title{
+    color: #0693e3;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+.etb-grid-b2f2e66a .reviewer-company{
+    color: #7f8c8d;
+    font-weight: 400;
+}
+
+/* Responsive Design */
+@media (min-width: 1025px) {
+    .etb-grid-b2f2e66a.wp-block-etb-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    .etb-grid-b2f2e66a .wp-block-etb-grid-item{
+        padding: 2rem;
+    }
+    .etb-grid-b2f2e66a .quote-icon svg{
+        width: 48px;
+        height: 48px;
+    }
+    .etb-grid-b2f2e66a .testimonial-message{
+        font-size: 18px;
+        line-height: 1.8;
+    }
+    .etb-grid-b2f2e66a .reviewer-name{
+        font-size: 20px;
+    }
+    .etb-grid-b2f2e66a .reviewer-title{
+        font-size: 16px;
+    }
+    .etb-grid-b2f2e66a .reviewer-company{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .etb-grid-b2f2e66a.wp-block-etb-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+    }
+    .etb-grid-b2f2e66a .wp-block-etb-grid-item{
+        padding: 1.5rem;
+    }
+    .etb-grid-b2f2e66a .quote-icon svg{
+        width: 42px;
+        height: 42px;
+    }
+    .etb-grid-b2f2e66a .testimonial-message{
+        font-size: 17px;
+    }
+    .etb-grid-b2f2e66a .reviewer-name{
+        font-size: 18px;
+    }
+    .etb-grid-b2f2e66a .reviewer-title{
+        font-size: 15px;
+    }
+    .etb-grid-b2f2e66a .reviewer-company{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .etb-grid-b2f2e66a.wp-block-etb-grid{
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .etb-grid-b2f2e66a .wp-block-etb-grid-item{
+        padding: 1.5rem;
+    }
+    .etb-grid-b2f2e66a .quote-icon svg{
+        width: 36px;
+        height: 36px;
+    }
+    .etb-grid-b2f2e66a .testimonial-message{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .etb-grid-b2f2e66a .reviewer-name{
+        font-size: 17px;
+    }
+    .etb-grid-b2f2e66a .reviewer-title{
+        font-size: 14px;
+    }
+    .etb-grid-b2f2e66a .reviewer-company{
+        font-size: 13px;
+    }
+}
+</style>
 <script type="text/javascript" src="https://aadhuniksharma.github.io/wp-content/plugins/easy-testimonial-blocks/includes/js/rater.min.js?ver=1.0.1" id="etb-rater-js"></script>
 <script type="text/javascript" src="https://aadhuniksharma.github.io/wp-content/plugins/easy-testimonial-blocks/includes/js/plugin.js?ver=1.0.1" id="etb-plugin-js"></script>
 <script type="text/javascript" id="ct-author-js-js-extra">/*  */
